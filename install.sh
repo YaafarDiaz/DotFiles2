@@ -41,6 +41,7 @@ echo ""
 echo "🔐 Configurando permisos..."
 chmod +x "$CONFIG_DIR/bspwm/bspwmrc"
 chmod +x "$CONFIG_DIR/sxhkd/sxhkdrc" 2>/dev/null || true
+chmod +x "$CONFIG_DIR/polybar/power-menu.sh" 2>/dev/null || true
 
 # Verificar dependencias
 echo ""

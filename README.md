@@ -53,6 +53,7 @@ yay -S nerd-fonts-intone-mono
 - Diseño minimalista
 - Iconos Nerd Font
 - Módulos separados para fácil personalización
+- Power menu interactivo con rofi
 
 ### SXHKD
 - Atajos intuitivos estilo Vim (hjkl)
@@ -98,7 +99,8 @@ DotFiles2/
 │   └── picom.conf
 ├── polybar/
 │   ├── config.ini
-│   └── modules.ini
+│   ├── modules.ini
+│   └── power-menu.sh
 ├── sxhkd/
 │   └── sxhkdrc
 ├── install.sh
