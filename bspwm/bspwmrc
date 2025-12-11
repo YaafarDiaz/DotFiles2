@@ -3,6 +3,9 @@
 # Load Xresources
 xrdb ~/.Xresources &
 
+# Set cursor for root window
+xsetroot -cursor_name left_ptr &
+
 # Keyboard layout
 setxkbmap -layout es
 
