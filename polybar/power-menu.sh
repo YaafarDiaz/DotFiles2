@@ -9,7 +9,7 @@ option4="  Cancelar"
 
 options="$option1\n$option2\n$option3\n$option4"
 
-choice=$(echo -e "$options" | rofi -dmenu -i -p "Opciones de energía" -theme ~/.local/share/rofi/themes/rounded-nord-dark.rasi)
+choice=$(echo -e "$options" | rofi -dmenu -i -p "Opciones de energía" -theme ~/.local/share/rofi/themes/windows11-grid-dark.rasi)
 
 case $choice in
     $option1)

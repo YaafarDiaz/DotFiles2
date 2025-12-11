@@ -60,7 +60,7 @@ yay -S nerd-fonts-intone-mono
 - Atajos intuitivos estilo Vim (hjkl)
 - Configuración completa para BSPWM
 - Lanzadores de aplicaciones comunes
-- Rofi configurado con iconos habilitados
+- Rofi con estilo Windows 11 Grid
 
 ## ⌨️ Atajos Principales
 
@@ -104,7 +104,9 @@ DotFiles2/
 │   ├── modules.ini
 │   └── power-menu.sh
 ├── rofi/
-│   └── config.rasi
+│   ├── config.rasi
+│   └── themes/
+│       └── windows11-grid-dark.rasi
 ├── sxhkd/
 │   └── sxhkdrc
 ├── install.sh
@@ -118,6 +120,7 @@ DotFiles2/
 3. **Refactorización de Polybar** con módulos separados
 4. **Comentarios y organización** mejorada
 5. **Reducción de dependencias externas**
+6. **Rofi estilo Windows 11 Grid** - Lanzador de apps estilo Windows 11
 
 ## 📝 Notas
 
