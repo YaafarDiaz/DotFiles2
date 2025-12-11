@@ -10,6 +10,7 @@ Configuración optimizada y refactorizada para un entorno de escritorio BSPWM en
 - **Polybar** - Barra de estado personalizada
 - **SXHKD** - Gestor de atajos de teclado
 - **Rofi** - Lanzador de aplicaciones con iconos
+- **Bibata Cursor** - Tema de cursor Material Design
 
 ## 🚀 Instalación Rápida
 
@@ -26,7 +27,14 @@ Instalar las siguientes aplicaciones antes de ejecutar el script:
 
 ```bash
 sudo pacman -S bspwm sxhkd polybar picom alacritty rofi feh firefox btop papirus-icon-theme
-yay -S nerd-fonts-intone-mono
+yay -S nerd-fonts-intone-mono bibata-cursor-theme
+```
+
+**O instalar cursores manualmente:**
+```bash
+# Descargar Bibata desde GitHub releases
+curl -L -o /tmp/Bibata.tar.xz "https://github.com/ful1e5/Bibata_Cursor/releases/download/v2.0.7/Bibata.tar.xz"
+mkdir -p ~/.icons && tar -xf /tmp/Bibata.tar.xz -C ~/.icons/
 ```
 
 ## 🎨 Características
@@ -97,6 +105,8 @@ DotFiles2/
 │   └── alacritty.toml
 ├── bspwm/
 │   └── bspwmrc
+├── gtk-3.0/
+│   └── settings.ini
 ├── picom/
 │   └── picom.conf
 ├── polybar/
@@ -109,6 +119,7 @@ DotFiles2/
 │       └── windows11-grid-dark.rasi
 ├── sxhkd/
 │   └── sxhkdrc
+├── .Xresources
 ├── install.sh
 └── README.md
 ```

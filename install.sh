@@ -15,7 +15,7 @@ echo "📦 Creando backups de configuraciones existentes..."
 BACKUP_DIR="$HOME/.config-backup-$(date +%Y%m%d-%H%M%S)"
 mkdir -p "$BACKUP_DIR"
 
-for dir in alacritty bspwm picom polybar sxhkd rofi; do
+for dir in alacritty bspwm picom polybar sxhkd rofi gtk-3.0; do
     if [ -d "$CONFIG_DIR/$dir" ]; then
         echo "  → Backup: $dir"
         cp -r "$CONFIG_DIR/$dir" "$BACKUP_DIR/"
@@ -28,13 +28,19 @@ echo "✅ Backups guardados en: $BACKUP_DIR"
 echo ""
 echo "📁 Instalando nuevas configuraciones..."
 
-for dir in alacritty bspwm picom polybar sxhkd rofi; do
+for dir in alacritty bspwm picom polybar sxhkd rofi gtk-3.0; do
     if [ -d "$SCRIPT_DIR/$dir" ]; then
         echo "  → Instalando: $dir"
         mkdir -p "$CONFIG_DIR/$dir"
         cp -r "$SCRIPT_DIR/$dir/"* "$CONFIG_DIR/$dir/"
     fi
 done
+
+# Copy .Xresources to home
+if [ -f "$SCRIPT_DIR/.Xresources" ]; then
+    echo "  → Instalando: .Xresources"
+    cp "$SCRIPT_DIR/.Xresources" "$HOME/"
+fi
 
 # Dar permisos de ejecución a bspwmrc
 echo ""

@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Load Xresources
+xrdb ~/.Xresources &
+
 # Keyboard layout
 setxkbmap -layout es
 
