@@ -1,0 +1,133 @@
+# DotFiles2 - Optimized Arch Linux BSPWM Setup
+
+Configuración optimizada y refactorizada para un entorno de escritorio BSPWM en Arch Linux.
+
+## 📦 Componentes
+
+- **Alacritty** - Terminal emulador con tema Tokyo Night
+- **BSPWM** - Window Manager tiling
+- **Picom** - Compositor con transparencias y animaciones
+- **Polybar** - Barra de estado personalizada
+- **SXHKD** - Gestor de atajos de teclado
+
+## 🚀 Instalación Rápida
+
+```bash
+git clone https://github.com/TU_USUARIO/DotFiles2.git
+cd DotFiles2
+chmod +x install.sh
+./install.sh
+```
+
+## 📋 Dependencias
+
+Instalar las siguientes aplicaciones antes de ejecutar el script:
+
+```bash
+sudo pacman -S bspwm sxhkd polybar picom alacritty rofi feh firefox btop
+yay -S nerd-fonts-intone-mono
+```
+
+## 🎨 Características
+
+### Alacritty
+- Tema Tokyo Night optimizado
+- Fuente: IntoneMono Nerd Font
+- Configuración limpia sin módulos innecesarios
+
+### BSPWM
+- Configuración dual monitor (eDP-1 y HDMI-1)
+- Bordes y gaps personalizados
+- Reglas de ventana por aplicación
+- Esquema de colores Dracula
+
+### Picom
+- Backend xrender para mejor rendimiento
+- Animaciones habilitadas
+- Reglas de opacidad por aplicación
+- Sin sombras para mayor rendimiento
+
+### Polybar
+- Módulos esenciales: CPU, RAM, Red, Batería
+- Diseño minimalista
+- Iconos Nerd Font
+- Módulos separados para fácil personalización
+
+### SXHKD
+- Atajos intuitivos estilo Vim (hjkl)
+- Configuración completa para BSPWM
+- Lanzadores de aplicaciones comunes
+
+## ⌨️ Atajos Principales
+
+| Atajo | Acción |
+|-------|--------|
+| `Super + Return` | Abrir Alacritty |
+| `Super + Shift + M` | Rofi (lanzador de aplicaciones) |
+| `Super + F` | Firefox |
+| `Super + W` | Cerrar ventana |
+| `Super + Alt + R` | Reiniciar BSPWM |
+| `Super + {h,j,k,l}` | Navegar entre ventanas |
+| `Super + Shift + {h,j,k,l}` | Mover ventanas |
+| `Super + {1-9}` | Cambiar de escritorio |
+
+## 🔧 Personalización
+
+### Cambiar monitores
+Edita `~/.config/bspwm/bspwmrc`:
+```bash
+bspc monitor TU_MONITOR -d 1 2 3 4
+```
+
+### Cambiar wallpaper
+Coloca tu wallpaper en `~/Imagenes/wall.jpg` o edita la ruta en `bspwmrc`.
+
+### Añadir módulos a Polybar
+Edita `~/.config/polybar/modules.ini` para agregar nuevos módulos personalizados.
+
+## 📁 Estructura
+
+```
+DotFiles2/
+├── alacritty/
+│   └── alacritty.toml
+├── bspwm/
+│   └── bspwmrc
+├── picom/
+│   └── picom.conf
+├── polybar/
+│   ├── config.ini
+│   └── modules.ini
+├── sxhkd/
+│   └── sxhkdrc
+├── install.sh
+└── README.md
+```
+
+## 🛠️ Optimizaciones Realizadas
+
+1. **Eliminación de módulos no utilizados** (VPN, Spotify, HackTheBox)
+2. **Simplificación de configuraciones de Picom** (sin sombras)
+3. **Refactorización de Polybar** con módulos separados
+4. **Comentarios y organización** mejorada
+5. **Reducción de dependencias externas**
+
+## 📝 Notas
+
+- Este setup está optimizado para Arch Linux
+- Asegúrate de tener instaladas las fuentes Nerd Fonts
+- El wallpaper debe estar en `~/Imagenes/wall.jpg`
+- La configuración incluye soporte para dual monitor
+
+## 🤝 Contribuciones
+
+Siéntete libre de hacer fork y personalizar según tus necesidades.
+
+## 📄 Licencia
+
+MIT License - Usa libremente
+
+---
+
+**Autor:** Kayn  
+**Fecha:** 2025-12-11

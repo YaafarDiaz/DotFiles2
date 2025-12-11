@@ -1,0 +1,43 @@
+#!/bin/sh
+
+# Keyboard layout
+setxkbmap -layout es
+
+# Start sxhkd
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+# Start polybar
+polybar --config=~/.config/polybar/config.ini barra1 &
+
+# Set wallpaper
+feh --bg-scale ~/Imagenes/wall.jpg
+
+# Start compositor
+picom --config ~/.config/picom/picom.conf &
+
+# Monitor configuration
+bspc monitor eDP-1 -d 1 2 3 
+bspc monitor HDMI-1 -d 4 5 6 7 
+
+# Window settings
+bspc config border_width 4
+bspc config window_gap 12
+bspc config split_ratio 0.52
+bspc config borderless_monocle true
+bspc config gapless_monocle true
+
+# Border colors
+bspc config normal_border_color "#44475a"
+bspc config active_border_color "#bd93f9"
+bspc config focused_border_color "#80deea"
+bspc config presel_feedback_color "#6272a4"
+
+# Application rules
+bspc rule -a Alacritty desktop='^1' follow=on
+bspc rule -a firefox-esr desktop='^2' follow=on
+bspc rule -a Brave-browser desktop='^2' follow=on
+bspc rule -a Code desktop='^4'
+bspc rule -a org.remmina.Remmina desktop='^5' follow=on
+bspc rule -a Spotify desktop='^7'
+bspc rule -a vlc desktop='^7' state=floating
+bspc rule -a Gimp desktop='^8' state=floating follow=on
