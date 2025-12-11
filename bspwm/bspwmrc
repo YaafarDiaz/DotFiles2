@@ -16,8 +16,7 @@ feh --bg-scale ~/Imagenes/wall.jpg
 picom --config ~/.config/picom/picom.conf &
 
 # Monitor configuration
-bspc monitor eDP-1 -d 1 2 3 
-bspc monitor HDMI-1 -d 4 5 6 7 
+bspc monitor eDP-1 -d 1 2 3 4 5 6 
 
 # Window settings
 bspc config border_width 4
@@ -38,6 +37,6 @@ bspc rule -a firefox-esr desktop='^2' follow=on
 bspc rule -a Brave-browser desktop='^2' follow=on
 bspc rule -a Code desktop='^4'
 bspc rule -a org.remmina.Remmina desktop='^5' follow=on
-bspc rule -a Spotify desktop='^7'
-bspc rule -a vlc desktop='^7' state=floating
-bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Spotify desktop='^6'
+bspc rule -a vlc desktop='^6' state=floating
+bspc rule -a Gimp desktop='^6' state=floating follow=on

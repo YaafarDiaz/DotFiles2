@@ -36,7 +36,8 @@ yay -S nerd-fonts-intone-mono
 - Configuración limpia sin módulos innecesarios
 
 ### BSPWM
-- Configuración dual monitor (eDP-1 y HDMI-1)
+- Configuración para monitor único (eDP-1)
+- 6 escritorios numerados
 - Bordes y gaps personalizados
 - Reglas de ventana por aplicación
 - Esquema de colores Dracula
@@ -73,10 +74,10 @@ yay -S nerd-fonts-intone-mono
 
 ## 🔧 Personalización
 
-### Cambiar monitores
+### Cambiar número de escritorios
 Edita `~/.config/bspwm/bspwmrc`:
 ```bash
-bspc monitor TU_MONITOR -d 1 2 3 4
+bspc monitor eDP-1 -d 1 2 3 4 5 6  # Ajusta según necesites
 ```
 
 ### Cambiar wallpaper
@@ -117,7 +118,7 @@ DotFiles2/
 - Este setup está optimizado para Arch Linux
 - Asegúrate de tener instaladas las fuentes Nerd Fonts
 - El wallpaper debe estar en `~/Imagenes/wall.jpg`
-- La configuración incluye soporte para dual monitor
+- Configurado para monitor único con 6 escritorios
 
 ## 🤝 Contribuciones
 
