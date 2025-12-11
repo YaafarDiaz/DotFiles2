@@ -9,6 +9,7 @@ Configuración optimizada y refactorizada para un entorno de escritorio BSPWM en
 - **Picom** - Compositor con transparencias y animaciones
 - **Polybar** - Barra de estado personalizada
 - **SXHKD** - Gestor de atajos de teclado
+- **Rofi** - Lanzador de aplicaciones con iconos
 
 ## 🚀 Instalación Rápida
 
@@ -24,7 +25,7 @@ chmod +x install.sh
 Instalar las siguientes aplicaciones antes de ejecutar el script:
 
 ```bash
-sudo pacman -S bspwm sxhkd polybar picom alacritty rofi feh firefox btop
+sudo pacman -S bspwm sxhkd polybar picom alacritty rofi feh firefox btop papirus-icon-theme
 yay -S nerd-fonts-intone-mono
 ```
 
@@ -59,6 +60,7 @@ yay -S nerd-fonts-intone-mono
 - Atajos intuitivos estilo Vim (hjkl)
 - Configuración completa para BSPWM
 - Lanzadores de aplicaciones comunes
+- Rofi configurado con iconos habilitados
 
 ## ⌨️ Atajos Principales
 
@@ -101,6 +103,8 @@ DotFiles2/
 │   ├── config.ini
 │   ├── modules.ini
 │   └── power-menu.sh
+├── rofi/
+│   └── config.rasi
 ├── sxhkd/
 │   └── sxhkdrc
 ├── install.sh

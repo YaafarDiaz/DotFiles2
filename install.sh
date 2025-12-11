@@ -15,7 +15,7 @@ echo "📦 Creando backups de configuraciones existentes..."
 BACKUP_DIR="$HOME/.config-backup-$(date +%Y%m%d-%H%M%S)"
 mkdir -p "$BACKUP_DIR"
 
-for dir in alacritty bspwm picom polybar sxhkd; do
+for dir in alacritty bspwm picom polybar sxhkd rofi; do
     if [ -d "$CONFIG_DIR/$dir" ]; then
         echo "  → Backup: $dir"
         cp -r "$CONFIG_DIR/$dir" "$BACKUP_DIR/"
@@ -28,7 +28,7 @@ echo "✅ Backups guardados en: $BACKUP_DIR"
 echo ""
 echo "📁 Instalando nuevas configuraciones..."
 
-for dir in alacritty bspwm picom polybar sxhkd; do
+for dir in alacritty bspwm picom polybar sxhkd rofi; do
     if [ -d "$SCRIPT_DIR/$dir" ]; then
         echo "  → Instalando: $dir"
         mkdir -p "$CONFIG_DIR/$dir"

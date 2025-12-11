@@ -2,7 +2,7 @@
 
 # Application Launchers
 super + shift + m
-	rofi -show drun -theme ~/.local/share/rofi/themes/rounded-nord-dark.rasi
+	rofi -show drun -show-icons -theme ~/.local/share/rofi/themes/rounded-nord-dark.rasi
 
 super + Return
 	alacritty
@@ -20,7 +20,7 @@ super + shift + f
 	firefox-esr
 
 super + @space
-	rofi -show drun -theme ~/.local/share/rofi/themes/rounded-nord-dark.rasi
+	rofi -show drun -show-icons -theme ~/.local/share/rofi/themes/rounded-nord-dark.rasi
 
 # Reload SXHKD
 super + Escape

@@ -1,0 +1,10 @@
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    icon-theme: "Adwaita";
+    display-drun: "Applications";
+    display-run: "Run";
+    display-window: "Window";
+    drun-display-format: "{name}";
+    font: "IntoneMono Nerd Font 12";
+}
