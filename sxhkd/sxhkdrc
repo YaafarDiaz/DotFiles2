@@ -10,8 +10,9 @@ super + Return
 ctrl + Return
 	alacritty --config-file ~/.config/alacritty/alacrittyStratus.toml
 
+# copilot in terminal
 super + shift + c
-	alacritty --working-directory ~/Personal -e copilot --banner
+	~/.config/bspwm/copilot-launcher.sh
 
 super + f
 	firefox

@@ -36,6 +36,7 @@ bspc config presel_feedback_color "#6272a4"
 
 # Application rules
 bspc rule -a Alacritty desktop='^1' follow=on
+bspc rule -a Alacritty:Copilot-Terminal desktop='^3' follow=on
 bspc rule -a firefox-esr desktop='^2' follow=on
 bspc rule -a Brave-browser desktop='^2' follow=on
 bspc rule -a Code desktop='^4'

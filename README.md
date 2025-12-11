@@ -75,7 +75,7 @@ mkdir -p ~/.icons && tar -xf /tmp/Bibata.tar.xz -C ~/.icons/
 | Atajo | Acción |
 |-------|--------|
 | `Super + Return` | Abrir Alacritty |
-| `Super + Shift + M` | Rofi (lanzador de aplicaciones) |
+| `Super + Shift + C` | Copilot (escritorio 3) |
 | `Super + F` | Firefox |
 | `Super + W` | Cerrar ventana |
 | `Super + Alt + R` | Reiniciar BSPWM |
@@ -104,7 +104,8 @@ DotFiles2/
 ├── alacritty/
 │   └── alacritty.toml
 ├── bspwm/
-│   └── bspwmrc
+│   ├── bspwmrc
+│   └── copilot-launcher.sh
 ├── gtk-3.0/
 │   └── settings.ini
 ├── picom/
